@@ -1,0 +1,163 @@
+body {
+    font-family: Arial;
+    font-size: 1.3rem;
+    height: 100vh;
+}
+
+i {
+    color: rgb(4, 204, 4);
+}
+
+nav i {
+    font-size: 70px;
+}
+
+nav {
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+footer {
+    border-top: 1px solid rgb(212, 212, 212);
+    font-size: 1rem;
+}
+
+.container-fluid i {
+    font-size: 350px;
+}
+
+form, .taskList {
+    margin: 0 auto;
+    border: 3px solid rgb(4, 204, 4);
+    border-radius: 10px;
+}
+
+
+.auth{
+    width: 40%;
+}
+
+.addTask {
+    width: 80%;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 1px 2px rgb(4, 204, 4);
+}
+
+.error, .submissionError {
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+}
+
+.submissionError {
+    display: none;
+    margin-bottom: 15px;
+}
+
+.visible{
+    display: block;
+}
+
+
+.signOut {
+    cursor: pointer;
+}
+
+.normal {
+    border: 2px solid rgb(224, 224, 57);
+}
+
+.normal .taskIcons {
+    background-color: rgb(224, 224, 57);
+    color: white;
+}
+
+.important {
+    border: 2px solid orange;
+}
+
+.important .taskIcons {
+    background-color: orange;
+    color: white;
+}
+
+.critical {
+    border: 2px solid red;;
+}
+
+.critical .taskIcons {
+    background-color: red;
+    color: white;
+}
+
+.task {
+    border-radius: 10px;
+}
+
+.taskIcons {
+    border-bottom: 1px solid black;
+}
+
+.taskIcons i {
+    font-size: 1.1rem;
+    color: black;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.taskIcons i:hover {
+    color: white;
+}
+
+.taskDate {
+    font-size: 0.8rem;
+}
+
+.taskFilter {
+    font-size: 1rem;
+    
+}
+
+.filterItem {
+    display: inline-block;
+    margin: 4px;
+}
+
+.taskFilter select {
+    width: fit-content;
+
+}
+
+.taskFilter input {
+    background-color: rgb(4, 204, 4);
+    border-radius: 10px;
+    color: white;
+    padding: 1px 10px;
+    margin: 2px;
+}
+
+
+
+.passwordRules li {
+    font-size: 0.6rem;
+    margin-left: -30px;
+}
+
+
+@media screen and (max-width: 850px) {
+    .auth {
+        width: 90%;
+    }
+
+  }
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 1rem;
+       
+    }
+    form {
+        width: 90%;
+    }
+}
